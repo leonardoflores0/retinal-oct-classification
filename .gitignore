@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore local datasets and model weights 
+data_dir/ 
+CellData/
+*.zip 
+
+# Ignore PyTorch model weight checkpoints 
+*.pth
+
+# Ignore Python/Colab temporary cache files
+.ipynb_checkpoints/
+__pycache__/
