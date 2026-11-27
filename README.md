@@ -9,8 +9,8 @@ A deep learning pipeline for multi-class classification of Optical Coherence Tom
 Optical Coherence Tomography (OCT) is a non-invasive imaging test used to capture cross-sectional scans of the retina. Automated classification of OCT scans assists ophthalmologists in the early detection and diagnosis of retinal pathologies (such as CNV, DME, and Drusen).
 
 ### Key Objectives
-* **Domain-Specific Preprocessing**: Utilize MONAI transforms for intensity scaling (`ScaleIntensity`), channel alignment (`EnsureChannelFirst`), and spatial standardization (`Resize`).
-* **Deterministic Training**: Guarantee experiment reproducibility across data splits and weight initialization using global seed control (`set_determinism(seed=0)`).
+* **Domain-Specific Preprocessing**: Utilize MONAI transforms for intensity scaling `ScaleIntensity`, channel alignment `EnsureChannelFirst`, and spatial standardization `Resize`.
+* **Deterministic Training**: Guarantee experiment reproducibility across data splits and weight initialization using global seed control `set_determinism(seed=0)`.
 * **Robust Neural Architecture**: Train a 2D DenseNet121 network adapted for 1-channel grayscale medical image inputs.
 * **Validation & Metrics**: Track per-epoch validation loss, Accuracy, and multi-class Area Under the ROC Curve (ROC-AUC) with automated best-model checkpointing.
 
