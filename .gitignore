@@ -226,7 +226,11 @@ CellData/
 
 # Ignore PyTorch model weight checkpoints 
 *.pth
+best_metric_model.pth
 
 # Ignore Python/Colab temporary cache files
 .ipynb_checkpoints/
 __pycache__/
+
+# Ignore TensorBoard logging directories 
+runs/
